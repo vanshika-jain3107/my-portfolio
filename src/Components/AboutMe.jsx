@@ -1,5 +1,5 @@
 import React from 'react'
-import Resume from '../assets/Vanshika_Jain_Resume4.pdf';
+import Resume from '../assets/Vanshika_Updated_Resume.docx';
 import { Briefcase, Code, User } from 'lucide-react';
 
 const AboutMe = () => {
