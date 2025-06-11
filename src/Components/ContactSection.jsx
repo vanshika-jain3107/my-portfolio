@@ -7,11 +7,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ContactSection = () => {
     const form = useRef();
-   
 
     const sendEmail = (e) => {
         e.preventDefault();
-        setLoading(true)
+
         emailjs.sendForm('service_pbazpxp', 'template_evs54b8', form.current, 'N4mHAc9INKMpIAgeZ')
             .then((result) => {
                 toast.success("Message Sent Successfully!");
@@ -94,9 +93,20 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
-            <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar newestOnTop closeOnClick pauseOnFocusLoss draggable pauseOnHover toastClassName={() =>
-                "relative flex p-3 min-h-10 rounded-md justify-between overflow-hidden cursor-pointer bg-card text-white shadow-lg"
-            } />
+            <ToastContainer
+                position="bottom-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                toastClassName={() =>
+                    "relative flex p-6 min-h-10 rounded-md justify-between overflow-hidden cursor-pointer  bg-card text-white shadow-lg"
+                }
+            />
         </section>
     );
 };

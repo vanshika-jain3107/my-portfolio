@@ -16,7 +16,13 @@ const navItems = [
 
   useEffect(() => {
   const handleScroll = () => {
-    console.log("scrollY:", window.screenY);
+    
+
+
+
+
+
+    
     setIsScrolled(window.screenY > 10); // Correct property here
   };
 
