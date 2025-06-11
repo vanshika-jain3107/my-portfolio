@@ -11,7 +11,7 @@ const projects = [
     image: "/projects/Foodie-Webpage.png",
     tags: ["React", "Tailwind"],
     demoUrl: "https://creative-gumption-89d5d6.netlify.app/",
-    githubUrl: "#"
+    githubUrl: "https://github.com/vanshika-jain3107/Foodie"
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const projects = [
     image: "/projects/EMS-system.png",
     tags: ["React", "Tailwind"],
     demoUrl: "https://guileless-alfajores-fdaafa.netlify.app/",
-    gihubUrl: "#"
+    gihubUrl: "https://github.com/vanshika-jain3107/EMS-system"
   }
 ]
 const ProjectSection = () => {
